@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="PlayPauseButton">
+        <attr name="bgColor" format="color"/>
+        <attr name="pauseBgColor" format="color"/>
+        <attr name="playBgColor" format="color"/>
+    </declare-styleable>
+</resources>
