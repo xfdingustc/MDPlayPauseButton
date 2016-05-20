@@ -14,10 +14,11 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         final PlayPauseButton view = (PlayPauseButton) findViewById(R.id.btn_play_pause);
+        view.toggle(true);
         view.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                view.toggle();
+                view.toggle(!view.isShowingPlay());
             }
         });
     }

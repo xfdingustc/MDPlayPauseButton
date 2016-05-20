@@ -47,6 +47,8 @@ public class PlayPauseButton extends FrameLayout {
     private int mWidth;
     private int mHeight;
 
+    private boolean mIsShowingPlay = false;
+
     public PlayPauseButton(Context context, AttributeSet attrs) {
         super(context, attrs);
         init(context, attrs);
@@ -126,7 +128,17 @@ public class PlayPauseButton extends FrameLayout {
         mDrawable.draw(canvas);
     }
 
-    public void toggle() {
+    public boolean isShowingPlay() {
+        return mIsShowingPlay;
+    }
+
+    public void toggle(boolean showPlay) {
+        if (mIsShowingPlay == showPlay) {
+            return;
+        }
+
+        mIsShowingPlay = showPlay;
+
         if (mAnimatorSet != null) {
             mAnimatorSet.cancel();
         }
