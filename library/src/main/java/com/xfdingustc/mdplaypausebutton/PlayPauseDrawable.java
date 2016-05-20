@@ -1,4 +1,4 @@
-package xfdingustc.mdplaypausebutton;
+package com.xfdingustc.mdplaypausebutton;
 
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;

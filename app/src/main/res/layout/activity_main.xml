@@ -11,7 +11,7 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="xfdingustc.mdplaypausebuttonsample.MainActivity">
 
-    <xfdingustc.mdplaypausebutton.PlayPauseButton
+    <com.xfdingustc.mdplaypausebutton.PlayPauseButton
         android:id="@+id/btn_play_pause"
         android:layout_width="256dp"
         android:layout_height="256dp"
@@ -22,5 +22,5 @@
         app:pauseBgColor="@color/colorPrimary"
         app:playBgColor="@color/colorAccent">
 
-    </xfdingustc.mdplaypausebutton.PlayPauseButton>
+    </com.xfdingustc.mdplaypausebutton.PlayPauseButton>
 </RelativeLayout>
